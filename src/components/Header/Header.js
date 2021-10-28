@@ -4,7 +4,7 @@ import logo from '../../images/logo-1.png'
 
 const Header = () => {
     return (
-        <div>
+        <div className="sticky-top">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container">
                     <Link className="navbar-brand" to="/"><img src={logo} alt="" /></Link>
@@ -24,6 +24,7 @@ const Header = () => {
                         </li>
                     </ul>
                     </div>
+                    <button className="btn btn-info px-5">LogIn</button>
                 </div>
             </nav>
         </div>
