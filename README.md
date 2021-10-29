@@ -1,4 +1,4 @@
-# Tourism website "TVILY"
+# Tourism website "TEVILY"
 
 This is travel egency website.Travel & Aduentures
 Where Would You Like To Go
@@ -12,7 +12,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 *Mongodb
 *Express
 *React
-*node 
+*Node 
 *Heroku
 *Firebase
 
