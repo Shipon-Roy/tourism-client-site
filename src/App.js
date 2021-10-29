@@ -7,6 +7,7 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import LogIn from './components/LogIn/LogIn';
 import ManageOrder from './components/ManageOrder/ManageOrder';
+import Booking from './components/MyOrder/Booking/Booking';
 import MyOrder from './components/MyOrder/MyOrder';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Register from './components/Register/Register';
@@ -24,6 +25,9 @@ function App() {
           <Route path="/home">
             <Home></Home>
           </Route>
+          <PrivateRoute path="/myOrder/:bookingId">
+            <Booking></Booking>
+          </PrivateRoute>
           <PrivateRoute path="/myOrder">
             <MyOrder></MyOrder>
           </PrivateRoute>

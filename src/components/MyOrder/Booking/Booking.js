@@ -1,37 +1,36 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import useAuth from '../../hooks/useAuth';
+import { useParams } from 'react-router';
 
-const Services = () => {
-    const [services, setServices] = useState([]);
+const Booking = () => {
+    const [service, setService] = useState({})
+    const {bookingId} = useParams();
     useEffect( () => {
-        fetch('http://localhost:5000/services')
+        fetch(`http://localhost:5000/services/${bookingId}`)
         .then(res => res.json())
-        .then(data => setServices(data))
+        .then(data => setService(data))
     }, [])
     return (
         <div>
             <div className="container my-5">
-                <div className="row row-cols-1 row-cols-md-3 g-4">
-                    {
-                        services.map(service => <div key={service._id} className="col">
-                        <div className="card h-100">
+                <div className="row">
+                    <div className="col-lg-4"></div>
+                    <div className="col-lg-4">
+                    <div className="col">
+                        <div class="card h-100">
                           <img src={service.img} className="card-img-top" alt="..."/>
                           <div className="card-body">
                               <p><i className="fas fa-star text-warning"></i> 8.0 Superb</p>
                             <h5 className="card-title">{service.title}</h5>
                             <p className="text-danger">{service.price}<small className="text-dark">/Per Person</small></p>
-                            <Link to={`/myOrder/${service._id}`} >
-                            <button className="btn btn-info">Booking Now</button>
-                            </Link>
                           </div>
                         </div>
-                      </div>)
-                    }
+                      </div>
+                    </div>
+                    <div className="col-lg-4"></div>
                 </div>
             </div>
         </div>
     );
 };
 
-export default Services;
+export default Booking;
