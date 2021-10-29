@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const ManageOrder = () => {
     const [orders, setOrders] = useState([])
     useEffect( () => {
-        fetch('http://localhost:5000/services')
+        fetch('https://glacial-fjord-55155.herokuapp.com/services')
         .then(res => res.json())
         .then(data => setOrders(data))
     }, [])
@@ -11,7 +11,7 @@ const ManageOrder = () => {
     const handleDelete = (id) => {
         const sure = window.confirm('Are you sure, you want to delete')
         if(sure){
-            const url = `http://localhost:5000/services/${id}`;
+            const url = `https://glacial-fjord-55155.herokuapp.com/services/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

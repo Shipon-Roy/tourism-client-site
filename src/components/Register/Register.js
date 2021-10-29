@@ -8,7 +8,7 @@ const Register = () => {
     const {user} = useAuth();
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        fetch('http://localhost:5000/register', {
+        fetch('https://glacial-fjord-55155.herokuapp.com/register', {
             method: 'POST',
             headers:{
                 'content-type': 'application/json'

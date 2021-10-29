@@ -1,10 +1,20 @@
-# Getting Started with Create React App
+# Tourism website "TVILY"
+
+This is travel egency website.Travel & Aduentures
+Where Would You Like To Go
+Tevily is a World Leading Online Tour Booking Platform
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the project directory, you can run:
+*Using 
+*Mongodb
+*Express
+*React
+*node 
+*Heroku
+*Firebase
 
 ### `npm start`
 

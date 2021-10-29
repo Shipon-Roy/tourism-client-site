@@ -6,7 +6,7 @@ const MyOrder = () => {
     const [service, setService] = useState({})
     const {bookingId} = useParams();
     useEffect( () => {
-        fetch(`http://localhost:5000/services/${bookingId}`)
+        fetch(`https://glacial-fjord-55155.herokuapp.com/services/${bookingId}`)
         .then(res => res.json())
         .then(data => setService(data))
     }, [])
