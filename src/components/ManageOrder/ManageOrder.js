@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import AllRegister from '../AllRegister/AllRegister';
 
 const ManageOrder = () => {
     const [orders, setOrders] = useState([])
@@ -29,6 +30,10 @@ const ManageOrder = () => {
     return (
         <div>
             <div className="container my-5">
+                <h3 className="text-center">All Register</h3>
+                <div className="my-5">
+                <AllRegister></AllRegister>
+                </div>
                 <h3 className="my-5 text-center">Manage All Order</h3>
                 <div className="row row-cols-1 row-cols-md-3 g-4">
                     {
