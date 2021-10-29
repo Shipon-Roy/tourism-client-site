@@ -7,6 +7,9 @@ import img3 from '../../images/place-3.png';
 import img4 from '../../images/place-4.png';
 import img5 from '../../images/place-5.png';
 import chooseimg from '../../images/why-choose.jpg';
+import news1 from '../../images/news-1.jpg';
+import news2 from '../../images/news-2.jpg';
+import news3 from '../../images/news-3.jpg';
 
 const Home = () => {
     return (
@@ -89,6 +92,27 @@ const Home = () => {
                                 <p className="text-secondary">Best Price Guarantee There are many variations of but the majority have simply free text.</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            {/* News & Articles */}
+            <div className="container my-5">
+                <div className="text-center">
+                    <p className="text-danger">From the blog post</p>
+                    <h1>News & Articles</h1>
+                </div>
+                <div className="row my-5">
+                    <div className="col-lg-4">
+                        <img src={news1} alt="" />
+                        <h4 className="p-3">Things to See and Do When Visiting Japan</h4>
+                    </div>
+                    <div className="col-lg-4">
+                        <img src={news2} alt="" />
+                        <h4 className="p-3">Journeys are Best Measured in New Friends</h4>
+                    </div>
+                    <div className="col-lg-4">
+                        <img src={news3} alt="" />
+                        <h4 className="p-3">Travel the Most Beautiful Places in the World</h4>
                     </div>
                 </div>
             </div>
