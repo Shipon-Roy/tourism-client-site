@@ -9,6 +9,7 @@ import LogIn from './components/LogIn/LogIn';
 import ManageOrder from './components/ManageOrder/ManageOrder';
 import Booking from './components/MyOrder/Booking/Booking';
 import MyOrder from './components/MyOrder/MyOrder';
+import Order from './components/Order/Order';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Register from './components/Register/Register';
 import AuthProvider from './context/AuthProvider';
@@ -30,6 +31,9 @@ function App() {
           </PrivateRoute>
           <PrivateRoute path="/myOrder">
             <MyOrder></MyOrder>
+          </PrivateRoute>
+          <PrivateRoute path="/order">
+            <Order></Order>
           </PrivateRoute>
           <Route path="/manageOrder">
             <ManageOrder></ManageOrder>
