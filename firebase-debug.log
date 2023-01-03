@@ -1,0 +1,85 @@
+[debug] [2023-01-03T14:58:15.199Z] ----------------------------------------------------------------------
+[debug] [2023-01-03T14:58:15.201Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\WALTON\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-01-03T14:58:15.202Z] CLI Version:   11.19.0
+[debug] [2023-01-03T14:58:15.202Z] Platform:      win32
+[debug] [2023-01-03T14:58:15.202Z] Node Version:  v19.3.0
+[debug] [2023-01-03T14:58:15.202Z] Time:          Tue Jan 03 2023 20:58:15 GMT+0600 (Bangladesh Standard Time)
+[debug] [2023-01-03T14:58:15.202Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-03T14:58:15.279Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-03T14:58:15.280Z] > authorizing via signed-in user (shiponroy509@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\projects\tevily-assignment-11\tourism-client-site
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-01-03T14:58:36.748Z] Using project from CLI flag: tourism-assignment-11-8bd71
+[debug] [2023-01-03T14:58:36.750Z] > refreshing access token with scopes: []
+[debug] [2023-01-03T14:58:36.752Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-01-03T14:58:36.752Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-01-03T14:58:37.351Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-01-03T14:58:37.351Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-01-03T14:58:37.352Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tourism-assignment-11-8bd71 [none]
+[debug] [2023-01-03T14:58:38.304Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tourism-assignment-11-8bd71 401
+[debug] [2023-01-03T14:58:38.304Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tourism-assignment-11-8bd71 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2023-01-03T14:58:38.305Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-01-03T14:58:38.729Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\WALTON\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\WALTON\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project tourism-assignment-11-8bd71. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-01-03T14:59:11.968Z] ----------------------------------------------------------------------
+[debug] [2023-01-03T14:59:11.973Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\WALTON\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-01-03T14:59:11.974Z] CLI Version:   11.19.0
+[debug] [2023-01-03T14:59:11.974Z] Platform:      win32
+[debug] [2023-01-03T14:59:11.974Z] Node Version:  v19.3.0
+[debug] [2023-01-03T14:59:11.974Z] Time:          Tue Jan 03 2023 20:59:11 GMT+0600 (Bangladesh Standard Time)
+[debug] [2023-01-03T14:59:11.974Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-03T14:59:12.080Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-03T14:59:12.081Z] > authorizing via signed-in user (shiponroy509@gmail.com)
+[debug] [2023-01-03T14:59:12.081Z] [iam] checking project tourism-assignment-11-8bd71 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-01-03T14:59:12.083Z] > refreshing access token with scopes: []
+[debug] [2023-01-03T14:59:12.085Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-01-03T14:59:12.085Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-01-03T14:59:12.594Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-01-03T14:59:12.595Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-01-03T14:59:12.595Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tourism-assignment-11-8bd71:testIamPermissions [none]
+[debug] [2023-01-03T14:59:12.595Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tourism-assignment-11-8bd71:testIamPermissions x-goog-quota-user=projects/tourism-assignment-11-8bd71
+[debug] [2023-01-03T14:59:12.596Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tourism-assignment-11-8bd71:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-01-03T14:59:14.100Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tourism-assignment-11-8bd71:testIamPermissions 401
+[debug] [2023-01-03T14:59:14.100Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tourism-assignment-11-8bd71:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"service":"cloudresourcemanager.googleapis.com","method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions"}}]}}
+[debug] [2023-01-03T14:59:14.101Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-01-03T14:59:14.102Z] > refreshing access token with scopes: []
+[debug] [2023-01-03T14:59:14.102Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-01-03T14:59:14.102Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-01-03T14:59:14.252Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-01-03T14:59:14.252Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-01-03T14:59:14.252Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tourism-assignment-11-8bd71 [none]
+[debug] [2023-01-03T14:59:14.766Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tourism-assignment-11-8bd71 401
+[debug] [2023-01-03T14:59:14.766Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tourism-assignment-11-8bd71 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2023-01-03T14:59:14.766Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-01-03T14:59:15.165Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\WALTON\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\WALTON\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project tourism-assignment-11-8bd71. Please make sure the project exists and your account has permission to access it.
