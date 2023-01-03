@@ -7,7 +7,7 @@ const MyOrder = () => {
     const {user} = useAuth();
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        fetch('https://glacial-fjord-55155.herokuapp.com/order', {
+        fetch('https://tuorism-server-site.onrender.com/order', {
             method: 'POST',
             headers:{
                 'content-type': 'application/json'

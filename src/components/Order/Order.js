@@ -3,14 +3,14 @@ import React, { useEffect, useState } from 'react';
 const Order = () => {
     const [orders, setOrders] = useState([]);
     useEffect( () => {
-        fetch('https://glacial-fjord-55155.herokuapp.com/order')
+        fetch('https://tuorism-server-site.onrender.com/order')
         .then(res => res.json())
         .then(data => setOrders(data))
     }, [])
     const handleDelete = id => {
         const sure = window.confirm('Are you sure, you want to delete')
         if(sure){
-            const url = `https://glacial-fjord-55155.herokuapp.com/order/${id}`;
+            const url = `https://tuorism-server-site.onrender.com/order/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

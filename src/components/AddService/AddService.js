@@ -5,7 +5,7 @@ import './AddService.css'
 const AddService = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const onSubmit = data => {
-        fetch('https://glacial-fjord-55155.herokuapp.com/addServices', {
+        fetch('https://tuorism-server-site.onrender.com/addServices', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

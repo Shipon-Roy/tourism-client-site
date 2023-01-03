@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const AllRegister = () => {
     const [register, setRegister] = useState([])
     useEffect( () => {
-        fetch('https://glacial-fjord-55155.herokuapp.com/register')
+        fetch('https://tuorism-server-site.onrender.com/register')
         .then(res => res.json())
         .then(data => setRegister(data))
     }, [])
@@ -11,7 +11,7 @@ const AllRegister = () => {
     const handleDelete = id => {
         const deleted = window.confirm('Are you sure, you wanted deleted')
         if(deleted){
-            const url = `https://glacial-fjord-55155.herokuapp.com/register/${id}`;
+            const url = `https://tuorism-server-site.onrender.com/register/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

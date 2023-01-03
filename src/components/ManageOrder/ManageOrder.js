@@ -4,7 +4,7 @@ import AllRegister from '../AllRegister/AllRegister';
 const ManageOrder = () => {
     const [orders, setOrders] = useState([])
     useEffect( () => {
-        fetch('https://glacial-fjord-55155.herokuapp.com/services')
+        fetch('https://tuorism-server-site.onrender.com/services')
         .then(res => res.json())
         .then(data => setOrders(data))
     }, [])
@@ -12,7 +12,7 @@ const ManageOrder = () => {
     const handleDelete = (id) => {
         const sure = window.confirm('Are you sure, you want to delete')
         if(sure){
-            const url = `https://glacial-fjord-55155.herokuapp.com/services/${id}`;
+            const url = `https://tuorism-server-site.onrender.com/services/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

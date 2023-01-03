@@ -5,7 +5,7 @@ const Booking = () => {
     const [service, setService] = useState({})
     const {bookingId} = useParams();
     useEffect( () => {
-        fetch(`https://glacial-fjord-55155.herokuapp.com/services/${bookingId}`)
+        fetch(`https://tuorism-server-site.onrender.com/services/${bookingId}`)
         .then(res => res.json())
         .then(data => setService(data))
     }, [])
